@@ -5,7 +5,7 @@ require 'graphql_playground/rails/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'graphql_playground_rails'
-  spec.version       = GraphQLPlayground::Rails::VERSION
+  spec.version       = GraphqlPlayground::Rails::VERSION
   spec.authors       = ['Radoslav Stankov']
   spec.email         = ['rstankov@gmail.com']
 
@@ -20,6 +20,9 @@ Gem::Specification.new do |spec|
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
+
+  spec.add_runtime_dependency 'railties'
+  spec.add_runtime_dependency 'sprockets-rails'
 
   spec.add_development_dependency 'bundler', '~> 1.16'
   spec.add_development_dependency 'rake', '~> 10.0'

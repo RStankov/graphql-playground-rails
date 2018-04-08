@@ -2,9 +2,10 @@ require: rubocop-rspec
 
 AllCops:
   Exclude:
-    - graphql_playground_rails.gemspec
     - bin/console
     - bin/setup
+    - example/bin/*
+    - graphql_playground_rails.gemspec
     - vendor/**/*
 
 # Disables "Line is too long"

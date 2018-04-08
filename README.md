@@ -1,9 +1,9 @@
 [![Code Climate](https://codeclimate.com/github/RStankov/graphql-playground-rails.svg)](https://codeclimate.com/github/RStankov/graphql-playground-rails)
 [![Build Status](https://secure.travis-ci.org/RStankov/graphql-playground-rails.svg)](http://travis-ci.org/RStankov/graphql-playground-rails)
 
-# GraphQLPlayground::Rails
+# GraphqlPlayground::Rails
 
-`GraphQLPlayground::Rails` is a mountable [GraphQL Playground](https://github.com/graphcool/graphql-playground) endpoint for [Ruby on Rails](http://rubyonrails.org/). [GraphQL Playground](https://github.com/graphcool/graphql-playground) is IDE for better development workflows (GraphQL Subscriptions, interactive docs & collaboration).
+`GraphqlPlayground::Rails` is a mountable [GraphQL Playground](https://github.com/graphcool/graphql-playground) endpoint for [Ruby on Rails](http://rubyonrails.org/). [GraphQL Playground](https://github.com/graphcool/graphql-playground) is IDE for better development workflows (GraphQL Subscriptions, interactive docs & collaboration).
 
 ## Installation
 
@@ -32,13 +32,13 @@ Add the engine to `routes.rb`:
 Rails.application.routes.draw do
   # ...
   if Rails.env.development?
-    mount GraphQLPlayground::Rails::Engine, at: '/graphql/playground', graphql_path: '/graphql'
+    mount GraphqlPlayground::Rails::Engine, at: '/graphql/playground', graphql_path: '/graphql'
   end
 end
 ```
 
 - `at:` is the path where [GraphQL Playground](https://github.com/graphcool/graphql-playground) will be served. You can access the IDE by visiting that path.
-- `graphql_path:` is the path to the [GraphQL](https://rubygems.org/gems/graphql) endpoint. All queries will send queries to this path.
+- `graphql_path:` is the path to the [GraphQL](https://rubygems.org/gems/graphql) endpoint. All queries will send queries to this path. (defaults to `/graphql`)
 
 ## Development
 
@@ -56,4 +56,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the GraphQLPlayground::Rails project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rsatnkov/graphql_playground_rails/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the GraphqlPlayground::Rails project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rsatnkov/graphql_playground_rails/blob/master/CODE_OF_CONDUCT.md).
