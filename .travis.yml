@@ -1,0 +1,11 @@
+sudo: false
+notifications:
+  email: false
+language: ruby
+rvm:
+  - 2.2
+  - 2.3
+script:
+  - bundle exec rake
+before_install:
+  - gem install bundler
