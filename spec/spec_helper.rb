@@ -3,6 +3,11 @@
 require 'bundler/setup'
 require 'graphql_playground/rails'
 
+ENV['RAILS_ENV'] = 'test'
+
+require_relative '../example/config/environment.rb'
+require 'rspec/rails'
+
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
   config.example_status_persistence_file_path = '.rspec_status'
