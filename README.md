@@ -10,7 +10,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'graphql_playground_rails'
+gem 'graphql_playground-rails'
 ```
 
 And then execute:
@@ -19,7 +19,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install graphql_playground_rails
+    $ gem install graphql_playground-rails
 
 ## Usage
 
